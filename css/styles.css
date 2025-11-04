@@ -213,7 +213,7 @@ main section#videos aside div video {
 
 footer {
   background-color: #eee;
-  border-top: 2px solid var(--main-color);
+  border-top: 2px solid #444;
   padding: var(--main-distance);
   width: 100%;
   display: grid;
@@ -263,8 +263,9 @@ body.dark footer {
   color: #fff;
 }
 
-body.dark header {
-  border-block-color: var(--main-color);
+body.dark header,
+body.dark footer {
+  border-color: var(--main-color);
 }
 
 body.dark header nav a {
