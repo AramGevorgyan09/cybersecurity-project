@@ -15,42 +15,50 @@
       </a>
 
       <nav>
-        <a href="#intro">Introduction</a>
-        <a href="#learning">How To Start</a>
-        <a href="#videos">Helpful Videos</a>
+        <a href="#intro" onclick="toggleNav()">Սկիզբ</a>
+        <a href="#learning" onclick="toggleNav()">Ինչպե՞ս Սկսել</a>
+        <a href="#videos" onclick="toggleNav()">Օգտակար Տեսանյութեր</a>
+
+        <div onclick="toggleNav()">&#10005;</div>
       </nav>
 
-      <div class="theme" onclick="changeTheme()">
-        <img src="./images/dark-mode.png" alt="Dark Mode" class="dark-mode active">
-        <img src="./images/light-mode.png" alt="Light Mode" class="light-mode">
+      <div class="theme">
+        <div class="toggle-nav" onclick="toggleNav()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <img src="./images/dark-mode.png" alt="Dark Mode" class="dark-mode active" onclick="changeTheme()">
+        <img src="./images/light-mode.png" alt="Light Mode" class="light-mode" onclick="changeTheme()">
       </div>
     </header>
 
     <main>
       <section id="intro">
-        <p class="title">What Is CyberSecurity?</p>
+        <p class="title">Ի՞նչ Է Կիբեռանվտանգությունը</p>
 
         <img src="./images/intro1.jpeg" alt="Intro">
-        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi qui autem cum veritatis maxime magnam possimus tempore inventore natus aliquid, voluptas porro laborum vel! Ea ex voluptatum quae labore nihil praesentium optio repudiandae hic ducimus dicta magnam rerum quod voluptate iste placeat facilis corrupti quibusdam ratione molestias illo cum pariatur, aliquam, aliquid dignissimos. Nobis saepe iste, inventore cumque atque delectus praesentium at dolorem aliquid? Nostrum a corrupti, quis mollitia, est saepe, maxime consectetur nobis expedita quae placeat excepturi! Est molestiae sint labore itaque aliquid porro nobis quam quis harum sapiente. Eveniet animi vero qui iusto saepe quod aliquam dolorem neque?</p>
+        <p class="text">Աշխարհը, որում ապրում ենք այսօր, ձևավորվել է լույսի և թվերի խաչմերուկում։ Մարդը, ով երբևէ կառուցում էր քարից և մետաղից, այժմ կառուցում է տեղեկատվությունից։ Ամեն րոպե ստեղծվում են միլիարդավոր տվյալներ, որոնցից յուրաքանչյուրը կարող է դառնալ գիտելիք, գաղտնիք կամ զենք։ Այս նոր իրականությունը՝ թվային քաղաքակրթությունը, չի ենթարկվում դասական սահմաններին։ Այն չունի աշխարհագրություն, չունի լեզվական կամ քաղաքական սահմաններ։ Այն տարածվում է մեր գիտակցության պես՝ անտեսանելի, բայց խորապես ազդեցիկ։ Եվ հենց այդ անտեսանելիության մեջ ծնվում է վտանգը։</p>
 
-        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi qui autem cum veritatis maxime magnam possimus tempore inventore natus aliquid, voluptas porro laborum vel! Ea ex voluptatum quae labore nihil praesentium optio repudiandae hic ducimus dicta magnam rerum quod voluptate iste placeat facilis corrupti quibusdam ratione molestias illo cum pariatur, aliquam, aliquid dignissimos. Nobis saepe iste, inventore cumque atque delectus praesentium at dolorem aliquid? Nostrum a corrupti, quis mollitia, est saepe, maxime consectetur nobis expedita quae placeat excepturi! Est molestiae sint labore itaque aliquid porro nobis quam quis harum sapiente. Eveniet animi vero qui iusto saepe quod aliquam dolorem neque?</p>
+        <p class="text second-text">Աշխարհը, որը մենք կառուցել ենք, դարձել է ավելի խելացի, քան մենք ինքներս։ Համակարգերը սովորում են մեզնից արագ, որոշում են մեզնից ճշգրիտ, բայց նրանց մեջ բացակայում է մի բան՝ մտածելու բարոյական պատճառը։ Տեխնոլոգիան կարող է ստեղծել անթիվ հնարավորություններ, բայց դրանցից յուրաքանչյուրը պահանջում է գիտակցություն։ Արդյո՞ք մենք պատրաստ ենք ապրել աշխարհում, որտեղ ամեն բան կարելի է վերահսկել, հետևել, կանխատեսել։ Այս հարցը մեզ վերադարձնում է մարդկային ինքնության հիմքերին։ Թվային քաղաքակրթությունը նոր փորձություն է մարդու էության համար․ արդյո՞ք նա կկարողանա մնալ մարդ, երբ ամեն ինչ թվայնացվում է։</p>
         <img src="./images/intro2.jpg" alt="Intro">
 
         <img src="./images/intro3.webp" alt="Intro">
-        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi qui autem cum veritatis maxime magnam possimus tempore inventore natus aliquid, voluptas porro laborum vel! Ea ex voluptatum quae labore nihil praesentium optio repudiandae hic ducimus dicta magnam rerum quod voluptate iste placeat facilis corrupti quibusdam ratione molestias illo cum pariatur, aliquam, aliquid dignissimos. Nobis saepe iste, inventore cumque atque delectus praesentium at dolorem aliquid? Nostrum a corrupti, quis mollitia, est saepe, maxime consectetur nobis expedita quae placeat excepturi! Est molestiae sint labore itaque aliquid porro nobis quam quis harum sapiente. Eveniet animi vero qui iusto saepe quod aliquam dolorem neque?</p>
+        <p class="text">Կիբերանվտանգության դերը ապագայում միայն կաճի։ Մասնագիտացված մասնագիտություններ արդեն ստեղծվում են՝ կիբերվերլուծաբաններ, տվյալների պաշտպանության մասնագետներ և էթիկական հաքերներ։ Սա ՏՏ ոլորտի ամենախոստումնալից ոլորտներից մեկն է։ Ամփոփելով՝ կիբերանվտանգությունը պարզապես տեխնոլոգիա չէ, այլ թվային աշխարհում անվտանգ վարքագծի մշակույթ։ Այն օգնում է պաշտպանել մեզ, մեր գաղտնիությունը, մեր տեղեկատվությունը և մեր ապագան։ Յուրաքանչյուր մարդ, նույնիսկ երեխան, կարող է նպաստել անվտանգությանը՝ պարզապես ուշադիր և զգույշ լինելով ինտերնետում։</p>
       </section>
 
       <section id="learning">
-        <p class="title">How To Start?</p>
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi beatae incidunt a unde atque iure harum, voluptatum molestiae. In inventore, nam dolor tempora officia nemo harum. Deleniti quidem officiis doloribus autem libero sequi iusto ipsa aut atque culpa molestias numquam nulla dolorem ipsam sunt, eum, eligendi odio impedit? Laborum sit nobis quidem quia quaerat, assumenda fugiat id adipisci! Quia fugiat quis ipsam ipsum non beatae odit exercitationem quisquam fuga sit deserunt rerum sapiente nostrum velit perferendis consequuntur, quod incidunt excepturi ad, debitis accusantium at, eos minima! Exercitationem illum assumenda repellat praesentium odit amet non voluptas dolores iste suscipit inventore incidunt voluptatibus neque eum esse, sed aliquid id. Nostrum molestiae voluptatibus non qui distinctio adipisci ipsam nisi debitis dolorem laudantium, optio voluptatem omnis. Voluptatum reprehenderit consequatur fugiat odit similique, officia blanditiis, amet temporibus esse laboriosam provident recusandae. Temporibus, similique assumenda. Sapiente temporibus sequi nostrum eos distinctio a incidunt labore quam voluptatum, quo minus, architecto reiciendis, nisi ex accusamus deserunt? Natus asperiores dicta nostrum eveniet doloribus eaque culpa mollitia ab, inventore tempora deleniti omnis esse error vel temporibus. Mollitia sequi sapiente et perferendis sunt odit ipsum totam corporis, libero temporibus, doloremque dolore voluptas animi a. Accusantium enim qui ratione adipisci. Dolore.</p>
+        <p class="title">Ինչպե՞ս Սկսել</p>
+        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident sint porro quasi facilis autem ad! Fugiat aliquid voluptatem quidem, eligendi ullam nostrum deserunt? Numquam aperiam aspernatur harum similique id enim dicta perspiciatis consequuntur! Praesentium odio, qui modi voluptate dolorem vitae consequatur impedit doloremque ducimus earum dolor vel molestias deserunt dignissimos atque sequi sunt nobis veniam error illum incidunt! Quam sapiente autem, suscipit rerum voluptatum ex consequatur voluptates enim. Libero, et? Exercitationem, et architecto voluptate provident dolore error iste magnam praesentium tempore! Quos atque exercitationem dolore dicta amet aliquam accusantium corporis laboriosam consequuntur architecto voluptatum, delectus ratione dolores doloremque officia consectetur!</p>
       </section>
 
       <section id="videos">
-        <p class="title">Helpful Videos</p>
+        <p class="title">Օգտակար Տեսանյութեր</p>
         
         <aside>
           <div>
-            <p>Our Introduction Video: Learn How To Start</p>
+            <p>Կիբեռանվտանգության Հիմունքները․ Ներածություն</p>
             <video src="./videos/video1.mp4" controls></video>
           </div>
 
@@ -77,36 +85,27 @@
     <footer>
       <section>
         <aside>
-          <p>Contact us</p>
+          <p>Կապ Մեզ Հետ</p>
 
           <ul>
-            <li>077889900</li>
-            <li>077889900</li>
-            <li>077889900</li>
+            <li>+374-77-889900</li>
+            <li>+374-10-398920</li>
+            <li>cybersecurity.project@school.com</li>
           </ul>
         </aside>
 
         <aside>
-          <p>Contact us</p>
+          <p>Հասցե</p>
 
           <ul>
-            <li>077889900</li>
-            <li>077889900</li>
-            <li>077889900</li>
+            <li><a href="https://google.com/maps/place/Средняя+Школа+№94/data=!4m2!3m1!1s0x0:0x128b002ed31fae48?sa=X&ved=1t:2428&ictx=111" target="_blank">Երևան, Բաշինջաղյան փող., 100 շենք</a></li>
           </ul>
         </aside>
 
-        <aside>
-          <p>Contact us</p>
-
-          <ul>
-            <li>077889900</li>
-            <li>077889900</li>
-            <li>077889900</li>
-          </ul>
-        </aside>
-
-        <p class="end">&copy; CyberSecurity Basics 2025. All Rights Reserved</p>
+        <p class="end">
+          &copy; Կիբեռանվտանգության Հիմունքներ 2025:<br>
+          Տվյալ կայքում առկա նյութերի ճշգրտությունը չի երաշխավորվում։
+        </p>
       </section>
     </footer>
 

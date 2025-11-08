@@ -30,3 +30,15 @@ const changeTheme = () => {
     lightModeImg.className = ''
   }
 }
+
+const nav = document.querySelector('header nav')
+
+const toggleNav = () => {
+  if (window.innerWidth <= 720) {
+    if (nav.className == 'active') {
+      nav.className = ''
+    } else {
+      nav.className = 'active'
+    }
+  }
+}

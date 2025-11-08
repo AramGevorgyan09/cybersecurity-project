@@ -97,17 +97,31 @@ header a.logo img {
 }
 
 header nav {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: var(--main-distance);
   width: min-content;
+  transition: 0.4s;
+}
+
+header nav.active {
+  transform: unset;
 }
 
 header nav a {
   white-space: nowrap;
 }
 
-header nav a:hover {
+header nav div {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 28px;
+  line-height: 100%;
+}
+
+header nav a:hover,
+header nav div:hover {
   color: var(--main-color);
 }
 
@@ -116,6 +130,21 @@ header .theme {
   position: relative;
   width: 40px;
   height: 40px;
+}
+
+header .theme .toggle-nav {
+  position: absolute;
+  top: 50%;
+  left: 65px;
+  transform: translateY(-50%);
+  display: none;
+  align-items: center;
+  height: 35px;
+}
+
+header .theme .toggle-nav div {
+  width: 35px;
+  border: 1px solid #000;
 }
 
 header .theme img {
@@ -149,6 +178,7 @@ main section .title {
   font-size: 36px;
   font-weight: 700;
   padding-top: var(--main-distance);
+  text-align: center;
 }
 
 main section#intro {
@@ -222,19 +252,29 @@ footer {
 
 footer section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: var(--main-distance) calc(2 * var(--main-distance));
-  width: fit-content;
-  justify-items: center;
+}
+
+footer section aside p {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 footer section aside ul {
-  margin-left: 20px;
+  margin: 5px 0 0 25px;
+}
+
+footer section aside ul li a:hover {
+  color: var(--main-color);
 }
 
 footer section .end {
   grid-column: 1 / 4;
   color: #888;
+  text-align: center;
+  border-top: 1px solid #888;
+  padding-top: 5px;
 }
 
 /* ----- dark mode styles ----- */
@@ -268,12 +308,21 @@ body.dark footer {
   border-color: var(--main-color);
 }
 
+body.dark header nav {
+  background-color: #000;
+  border-color: var(--main-color);
+}
+
 body.dark header nav a {
   color: #fff;
 }
 
 body.dark header nav a:hover {
   color: var(--main-color);
+}
+
+body.dark header .theme .toggle-nav div {
+  border-color: #fff;
 }
 
 body.dark main section#videos aside div {
@@ -284,4 +333,12 @@ body.dark main section#videos aside div {
 body.dark main section#videos aside::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
   border-color: #080808;
+}
+
+body.dark footer section aside ul li a {
+  color: #fff;
+}
+
+body.dark footer section aside ul li a:hover {
+  color: var(--main-color);
 }
