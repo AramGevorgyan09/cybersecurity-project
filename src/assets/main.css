@@ -1,35 +1,80 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+  --main-color: #37ad00;
+  --main-distance: 40px;
 }
 
-a,
-.green {
+.dark {
+  --bg-color: #000;
+  --text-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  transition: 0.3s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+::selection {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+/* ----- scrollbar styles ----- */
+
+::-webkit-scrollbar {
+  background-color: #eee;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #111;
+}
+
+/* ----- tags styles ----- */
+
+a {
+  color: #000;
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+/* ----- dark mode styles ----- */
+
+.dark ::-webkit-scrollbar {
+  background-color: #000;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.dark ::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+.dark ::-webkit-scrollbar-thumb:active {
+  background-color: #257500;
+}
+
+/* ----- adaptation styles ----- */
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --main-distance: 20px;
   }
 }
