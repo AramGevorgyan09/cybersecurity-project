@@ -37,6 +37,16 @@ import FooterBlock from './components/FooterBlock.vue'
         </div>
 
         <div>
+          <p>Основы кибербезопасности: Введение</p>
+          <video src="@/assets/videos/our-intro-ru.mp4" controls></video>
+        </div>
+
+        <div>
+          <p>Cybersecurity Fundamentals: Introduction</p>
+          <video src="@/assets/videos/our-intro-en.mp4" controls></video>
+        </div>
+
+        <div>
           <p>Everything you NEED to know as Cybersecurity Beginner</p>
           <video src="@/assets/videos/video1.mp4" controls></video>
         </div>
