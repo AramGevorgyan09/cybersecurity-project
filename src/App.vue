@@ -24,7 +24,7 @@ import FooterBlock from './components/FooterBlock.vue'
     <section id="learning">
       <p class="title">Ինչպե՞ս Սկսել</p>
 
-      <p class="text">Որոլտի մասին ավելին սովորելու և ձեր կարիերան սկսելու համար մենք առաջարկում ենք մեր հրատարակած նոր գիրքը, որը կարող եք տեսնել հետևյալ հղումով՝ <a href="https://online.fliphtml5.com/jtjpp/aszu/#p=20" target="_blank">https://online.fliphtml5.com/jtjpp/aszu/#p=20</a>: Ինչպես նաև կարող եք տեսնել մեր հայերեն, ռուսերեն և անգլերեն լեզուներով ներածության վիդեոները։</p>
+      <p class="text">Որոլտի մասին ավելին սովորելու և ձեր կարիերան սկսելու համար մենք առաջարկում ենք մեր հրատարակած նոր գիրքը, որը կարող եք տեսնել հետևյալ հղումով՝ <a href="https://online.fliphtml5.com/jtjpp/aszu/" target="_blank">https://online.fliphtml5.com/jtjpp/aszu/</a>: Ինչպես նաև կարող եք տեսնել մեր հայերեն, ռուսերեն և անգլերեն լեզուներով ներածության վիդեոները։</p>
     </section>
 
     <section id="videos">
