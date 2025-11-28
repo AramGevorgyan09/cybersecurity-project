@@ -24,7 +24,7 @@ import FooterBlock from './components/FooterBlock.vue'
     <section id="learning">
       <p class="title">Ինչպե՞ս Սկսել</p>
 
-      <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident sint porro quasi facilis autem ad! Fugiat aliquid voluptatem quidem, eligendi ullam nostrum deserunt? Numquam aperiam aspernatur harum similique id enim dicta perspiciatis consequuntur! Praesentium odio, qui modi voluptate dolorem vitae consequatur impedit doloremque ducimus earum dolor vel molestias deserunt dignissimos atque sequi sunt nobis veniam error illum incidunt! Quam sapiente autem, suscipit rerum voluptatum ex consequatur voluptates enim. Libero, et? Exercitationem, et architecto voluptate provident dolore error iste magnam praesentium tempore! Quos atque exercitationem dolore dicta amet aliquam accusantium corporis laboriosam consequuntur architecto voluptatum, delectus ratione dolores doloremque officia consectetur!</p>
+      <p class="text">Որոլտի մասին ավելին սովորելու և ձեր կարիերան սկսելու համար մենք առաջարկում ենք մեր հրատարակած նոր գիրքը, որը կարող եք տեսնել հետևյալ հղումով՝ <a href="https://online.fliphtml5.com/jtjpp/aszu/#p=20" target="_blank">https://online.fliphtml5.com/jtjpp/aszu/#p=20</a>: Ինչպես նաև կարող եք տեսնել մեր հայերեն, ռուսերեն և անգլերեն լեզուներով ներածության վիդեոները։</p>
     </section>
 
     <section id="videos">
@@ -141,6 +141,15 @@ main section {
 .blocks p {
   font-size: 20px;
   font-weight: 700;
+}
+
+a {
+  color: var(--main-color);
+  border-bottom: 2px solid transparent;
+}
+
+a:hover {
+  border-color: var(--main-color);
 }
 
 video {
